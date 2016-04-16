@@ -1,0 +1,96 @@
+#search {
+  position: relative;
+  border-radius: 18px;
+  border: 1px solid #e4e3e3;
+  height: 42px;
+  width: 270px;
+  background: #f7f7f7;
+  box-shadow: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+#search input {
+  border-radius: 18px;
+  font: 400 14px/20px "Roboto Slab", sans-serif;
+  color: #777777;
+  position: relative;
+  width: 218px;
+  background: #f7f7f7;
+  padding: 11px 0 12px 15px;
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline: none;
+}
+#search a {
+  display: block;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  color: #ffffff;
+  top: 50%;
+  margin-top: -11px;
+  right: 37px;
+}
+#search a > .search_icon {
+  display: block;
+}
+#search a > .search_icon:hover:before {
+  color: #ffae00;
+}
+#search a > .search_icon:before {
+  display: block;
+  font-family: FontAwesome;
+  font-size: 23px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  content: '\f002';
+  color: #84418e;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+@media (max-width: 1199px) {
+  #search {
+    width: 220px;
+  }
+  #search input {
+    width: 168px;
+  }
+}
+@media (max-width: 979px) {
+  #search {
+    width: 172px;
+  }
+  #search input {
+    width: 120px;
+  }
+}
+@media (max-width: 767px) {
+  #search {
+    width: 420px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #search input {
+    width: 368px;
+  }
+}
+@media (max-width: 479px) {
+  #search {
+    width: 270px;
+  }
+  #search input {
+    width: 220px;
+  }
+}
