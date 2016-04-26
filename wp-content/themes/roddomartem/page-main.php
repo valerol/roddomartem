@@ -35,7 +35,10 @@ $content_3 = ra_get_posts(
 	array( 'image', 'title', 'description' ),
 	4 );
 $heading_3 = ra_set_content( 'div', array( 'content' => '<h5>' . __( 'Our specialists', 'roddomartem' ) . '</h5>', 'class' => 'heading2 wow fadeIn' ) );
-$content_3 = ra_set_content( 'div', array( 'class' => 'box3-wrapper', 'content' => $content_3 ) );
+
+if ( $content_3 ) { 
+	$content_3 = ra_set_content( 'div', array( 'class' => 'box3-wrapper', 'content' => $content_3 ) );
+}
 
 //Map
 $content_4 = ra_set_content( 'map', array( 'content' => get_theme_mod( 'map' ), 'class' => 'map-wrapper1 wow zoomIn' ) );
