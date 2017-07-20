@@ -49,10 +49,10 @@
   <div id="stuck_container">
     <div class="container">
       <div class="row">
-        <div class="grid_9">
+        <div class="grid_10">
 			<?php wp_nav_menu( array( 'container' => 'nav', 'container_class' => '', 'menu' => 'main', 'menu_class' => 'sf-menu' ) ); ?>
         </div>
-        <div class="grid_3">
+        <div class="grid_2">
 			<?php if ( ! is_user_logged_in() ) : ?>
 				<a id="login-link" class="popup-link login-link" href=""><?php _e( 'Login', 'roddomartem' ) ?></a>
 				<div class="popup-container login-form" id="login-form"><?php wp_login_form(); ?></div>
